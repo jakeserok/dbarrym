@@ -84,6 +84,13 @@ li.right {
   float: right;
 }
 
+li.email {
+  display: block;
+  text-align: center;
+  color: white;
+  padding: 14px 16px;
+}
+
 li a {
   display: block;
   color: white;
