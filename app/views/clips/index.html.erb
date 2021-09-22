@@ -1,0 +1,18 @@
+<% if current_user.admin? %>
+  <div>
+    <p style="text-align: center;"><%= @size.to_f / 1000000000 %> gb of 10 gb used.</p>
+  <div>
+<% end %>
+
+<h2 style="text-align: center;">Saved Clips</h2>
+
+<div>
+  <% @clips.each do |clip| %>
+    <div class="card card-body" style="margin-bottom: 4px;">
+      <%= clip.title %>
+      <%= link_to clip do %>
+        <%= image_tag(clip.thumbnail, height: '200', width: 'auto') %>
+      <% end %>
+    </div>
+  <% end %>
+</div>

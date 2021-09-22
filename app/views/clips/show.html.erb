@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<div style="text-align: center;">
+  <%= @clip.title %>
+</div>
+
+<div class="video">
+  <%= video_tag(url_for(@clip.video), size: "800x600", controls: '') %>
+</div>
+
+<div style="text-align: center;margin-top: 2rem;">
+  <% if current_user.admin? %>
+    <%= link_to 'Delete', clip_path(@clip), method: :delete, data: { confirm: "Are you sure you want to delete this video?" }, class: 'btn link' %>
+  <% end %>
+</div>

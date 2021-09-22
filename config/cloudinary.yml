@@ -1,0 +1,11 @@
+development: 
+  cloud_name: "dtzfvoc5p"
+  api_key: "887712459696749"
+  api_secret: "xuCRvmuQcJpLpCgo7DVaBERmVIM"
+  secure: true
+
+production:
+  cloud_name: "dtzfvoc5p"
+  api_key: "887712459696749"
+  api_secret: "xuCRvmuQcJpLpCgo7DVaBERmVIM"
+  secure: true

@@ -14,18 +14,21 @@
  *= require_self
  */
 
-
-html{
-  background: url(background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: helvetica, sans-serif;
- }
-
 body{
+  background: rgb(75, 75, 75);
   color: white;
+  font-family: helvetica, sans-serif;
+}
+
+.background{
+  background-image: url("background.jpg");
+  background-size: 1280px 960px;
+  z-index:-1;
+  position:absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
  }
 
 .ra{
@@ -114,6 +117,12 @@ li a:hover {
   align-items: center;
 }
 
+.card-body {
+  background: whitesmoke;
+  border-radius: 6px;
+  margin: 0 25% 0 25%;
+}
+
 input.card-field {
   padding: 6px;
   border-radius: 6px;
@@ -130,6 +139,7 @@ input.card-field {
   border-radius: 6px;
   width: 6rem;
   font-size: 1rem;
+  padding: 10px 15px;
 }
 
 .btn-lg {
@@ -155,6 +165,11 @@ input.card-field {
   margin: 2rem 5rem 0 5rem;
   color: white;
   border-radius: 4rem;
+}
+
+.video {
+  text-align: center;
+  margin-top: -2rem;
 }
 
 @media(max-width:720px){
